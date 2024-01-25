@@ -215,7 +215,7 @@
           x: Math.floor(Math.random() * (canvas.width / gridSize)),
           y: Math.floor(Math.random() * (canvas.height / gridSize))
         };
-      } while (isFoodOnSnake(newFood));
+      } while (isFoodOnSnake(newFood) || isObstacleOnFood(newFood));
 
       food = newFood;
     }
@@ -331,6 +331,7 @@
   </script>
 </body>
 </html>
+
 
     
 
